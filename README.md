@@ -69,7 +69,7 @@ To assess the performance of your model, you should organize the ranking results
 }
 ```
 
-In this format, `cid_1_from_qid_1_candidate_pool`, `cid_2_from_qid_1_candidate_pool`, and so on, represent the IDs of the candidate documents in the candidate pool associated with the first query. These IDs come from the qrel dict associated with your dataset ([detail of the dataset](https://github.com/BIRCO-benchmark/BIRCO/blob/main/datasets/readme.md)). The candidates should be listed in order of decreasing relevance; meaning, the first ID in each list is considered the most relevant document to the query among all candidates in the pool.
+In this format, `cid_1_from_qid_1_candidate_pool`, `cid_2_from_qid_1_candidate_pool`, and so on, represent the IDs of the candidate documents in the candidate pool associated with the first query. These IDs come from the qrel dict associated with your dataset ([detail of the dataset](https://github.com/BIRCO-benchmark/BIRCO_dataset/blob/main/datasets/readme.md)). The candidates should be listed in order of decreasing relevance; meaning, the first ID in each list is considered the most relevant document to the query among all candidates in the pool.
 
 Please note, for each query, the entirety of its candidate pool needs to be ranked. Also note, different query can have different candidate pool of different size.
 
