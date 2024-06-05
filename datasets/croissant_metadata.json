@@ -1,0 +1,166 @@
+{
+  "datasets": [
+    {
+      "name": "DORIS_MAE_Query",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "DORIS_MAE_Corpus",
+      "fields": [
+        {"name": "cid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "DORIS_MAE_Qrel",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "cid", "type": "string"},
+        {"name": "relevance_score", "type": "float"}
+      ]
+    },
+    {
+      "name": "ArguAna_Query",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "ArguAna_Corpus",
+      "fields": [
+        {"name": "cid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "ArguAna_Qrel",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "cid", "type": "string"},
+        {"name": "relevance_score", "type": "float"}
+      ]
+    },
+    {
+      "name": "WhatsThatBook_Query",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "WhatsThatBook_Corpus",
+      "fields": [
+        {"name": "cid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "WhatsThatBook_Qrel",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "cid", "type": "string"},
+        {"name": "relevance_score", "type": "float"}
+      ]
+    },
+    {
+      "name": "Clinical_Trial_Query",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "Clinical_Trial_Corpus",
+      "fields": [
+        {"name": "cid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "Clinical_Trial_Qrel",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "cid", "type": "string"},
+        {"name": "relevance_score", "type": "float"}
+      ]
+    },
+    {
+      "name": "RELIC_Query",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "RELIC_Corpus",
+      "fields": [
+        {"name": "cid", "type": "string"},
+        {"name": "text", "type": "string"}
+      ]
+    },
+    {
+      "name": "RELIC_Qrel",
+      "fields": [
+        {"name": "qid", "type": "string"},
+        {"name": "cid", "type": "string"},
+        {"name": "relevance_score", "type": "float"}
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "DORIS_MAE_Query",
+      "to": "DORIS_MAE_Qrel",
+      "on": "qid"
+    },
+    {
+      "from": "DORIS_MAE_Corpus",
+      "to": "DORIS_MAE_Qrel",
+      "on": "cid"
+    },
+    {
+      "from": "ArguAna_Query",
+      "to": "ArguAna_Qrel",
+      "on": "qid"
+    },
+    {
+      "from": "ArguAna_Corpus",
+      "to": "ArguAna_Qrel",
+      "on": "cid"
+    },
+    {
+      "from": "WhatsThatBook_Query",
+      "to": "WhatsThatBook_Qrel",
+      "on": "qid"
+    },
+    {
+      "from": "WhatsThatBook_Corpus",
+      "to": "WhatsThatBook_Qrel",
+      "on": "cid"
+    },
+    {
+      "from": "Clinical_Trial_Query",
+      "to": "Clinical_Trial_Qrel",
+      "on": "qid"
+    },
+    {
+      "from": "Clinical_Trial_Corpus",
+      "to": "Clinical_Trial_Qrel",
+      "on": "cid"
+    },
+    {
+      "from": "RELIC_Query",
+      "to": "RELIC_Qrel",
+      "on": "qid"
+    },
+    {
+      "from": "RELIC_Corpus",
+      "to": "RELIC_Qrel",
+      "on": "cid"
+    }
+  ]
+}
