@@ -10,11 +10,11 @@ We provide information about test sets for five datasets in BIRCO.
 2. **ArguAna**:
 100 queries, each with a candidate pool of around 50 passages. Queries and passages are both complex one-paragraph arguments about current affairs. The objective is to find matching counter-arguments.
 3. **Clinical-Trial**:
-100 queries that are paragraph-length patient case-reports. Each query has a candidate pool comprising 30-110 passages that are paragraph-length descriptions of clinical trials. The objective is to find the most suitable clinical trial for a patient.
+50 queries that are paragraph-length patient case-reports. Each query has a candidate pool comprising 30-110 passages that are paragraph-length descriptions of clinical trials. The objective is to find the most suitable clinical trial for a patient.
 4. **WhatsThatBook (WTB)**:
 100 queries, with each query describing a book in an ambiguous manner. Each query has a pool of 50 passages, which are book descriptions.
 5. **RELIC**:
-100 queries which are excerpts from scholars analyzing classic English-language literature. Passages are sentences from a novel that have been extracted from the queries. The objective is to match a literary analysis with its missing quotations. 
+100 queries which are excerpts from scholars analyzing classic English-language literature. Each query has a pool of 50 Passages, which are sentences from a novel that have been extracted from the queries. The objective is to match a literary analysis with its missing quotations. 
 
 All of the datasets are in the following format:
 
